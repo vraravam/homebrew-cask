@@ -43,9 +43,9 @@ cask "raycast" do
   depends_on macos: ">= :big_sur"
 
   app "Raycast.app"
+  login_items "Raycast"
 
-  uninstall quit:       "com.raycast.macos",
-            login_item: "Raycast"
+  uninstall quit:       "com.raycast.macos"
 
   zap trash: [
     "~/.config/raycast",
