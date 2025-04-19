@@ -25,6 +25,7 @@ cask "keybase" do
   auto_updates true
 
   app "Keybase.app"
+  login_items "Keybase"
 
   postflight do
     system_command "#{appdir}/Keybase.app/Contents/SharedSupport/bin/keybase",
